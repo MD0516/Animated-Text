@@ -1,0 +1,65 @@
+*{
+    margin: 0;
+    padding: 0;
+    font-family: "Oswald", sans-serif;
+}
+
+body{
+    width: 100vw;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+h1.txt{
+    font-size: 150px;
+    font-weight: 2000px;
+    user-select: none;   
+    cursor: pointer;
+    background: rgb(131,58,180);
+    background: linear-gradient(283deg, rgba(131,58,180,1) 0%, rgba(253,29,29,1) 50%, rgba(252,176,69,1) 100%);
+    color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    background-size: 500% 500%;
+    animation: text 2s ease infinite ;
+}
+
+h1{
+    font-size: 150px;
+    font-weight: 2000px;
+    user-select: none;   
+    cursor: pointer;
+}
+
+.btn{
+    padding: 10px;
+    font-size: 30px;
+    font-weight: 800;
+    font-variant: small-caps;
+    border: none;
+    outline: none;
+    cursor: pointer;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    user-select: none;
+}
+
+@keyframes text{
+    0%{
+        background-position: 0%;
+    }
+    25%{
+        background-position: 50%;
+    }
+    50%{
+        background-position: 75%;
+    }
+    75%{
+        background-position: 100%;
+    }
+    100%{
+        background-position: 0%;
+    }
+}
